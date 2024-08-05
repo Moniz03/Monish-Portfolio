@@ -1,0 +1,68 @@
+:root {
+  --background-dark: #111;
+  --background-light: #fff;
+  --text-dark: #fff;
+  --text-light: #000;
+  --subtext-dark: #ccc;
+  --subtext-light: #666;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode {
+  --background: var(--background-dark);
+  --text: var(--text-dark);
+  --subtext: var(--subtext-dark);
+}
+
+body.light-mode {
+  --background: var(--background-light);
+  --text: var(--text-light);
+  --subtext: var(--subtext-light);
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background); /* Use variable for background color */
+  color: var(--text); /* Use variable for text color */
+  padding: 50px 0; /* Add some space on top and bottom */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.content-wrapper {
+  background-color: #000; /* Black background for content */
+  padding: 40px;
+  border-radius: 10px; /* Optional: Rounded corners */
+  max-width: 700px; /* Maximum width for the content box */
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 20px; /* Margin on the sides */
+  font-family: 'Consolas', 'Courier New', Courier, monospace; /* Consolas font with fallbacks */
+  box-shadow: var(--box-shadow); /* Optional: Shadow for depth */
+  text-align: center; /* Center text */
+}
+
+h1, h2 {
+  font-family: 'Consolas', 'Courier New', Courier, monospace; /* Ensure headers use Consolas */
+  color: var(--text); /* Use variable for header color */
+}
+
+h1 {
+  font-size: 2.9rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--subtext); /* Use variable for paragraph color */
+}

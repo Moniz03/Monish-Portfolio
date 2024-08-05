@@ -1,0 +1,80 @@
+/* File: ContactStyles.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--background); /* Use theme variable for background */
+  color: var(--text); /* Use theme variable for text color */
+  padding: 50px 0; /* Optional: Add padding */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center; /* Center align the form elements */
+}
+
+textarea,
+input:not([type='submit']) {
+  height: 50px;
+  padding-left: 16px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid var(--subtext); /* Use theme variable for border color */
+  box-sizing: border-box;
+  background-color: var(--background); /* Use theme variable for background */
+  color: var(--text); /* Use theme variable for text color */
+}
+
+textarea {
+  padding-top: 16px;
+  resize: none;
+  height: 250px;
+}
+
+::placeholder {
+  color: var(--subtext); /* Use theme variable for placeholder color */
+}
+
+input[type='submit'] {
+  background-color: var(--btn-color); /* Use theme variable for button background */
+  color: var(--btn-text-color); /* Use theme variable for button text color */
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  margin: auto;
+}
+
+input[type='submit']:hover {
+  transform: scale(1.05);
+}
+
+input[type='submit']:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 800px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 600px;
+    font-size: 20px;
+  }
+  form {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 800px;
+  }
+}

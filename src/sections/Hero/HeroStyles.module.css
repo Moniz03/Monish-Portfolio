@@ -1,0 +1,173 @@
+:root {
+  /* Dark Mode Colors */
+  --background-color: #111;
+  --text-color: #fff;
+  --btn-color: #333;
+  --btn-text-color: #fff;
+
+  /* Light Mode Colors */
+  --background-color-light: #fff;
+  --text-color-light: #000;
+  --btn-color-light: #f0f0f0;
+  --btn-text-color-light: #000;
+}
+
+body.dark-mode {
+  --background-color: var(--background-color);
+  --text-color: var(--text-color);
+  --btn-color: var(--btn-color);
+  --btn-text-color: var(--btn-text-color);
+}
+
+body.light-mode {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --btn-color: var(--btn-color-light);
+  --btn-text-color: var(--btn-text-color-light);
+}
+
+/* Base Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  margin: 0;
+  font-family: 'Consolas', 'Courier New', Courier, monospace; /* Font-family with fallbacks */
+  font-size: 18px; /* Base font size */
+  color: var(--text-color); /* Default text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  height: 100dvh;
+  min-height: 500px;
+}
+
+.hero {
+  max-width: 300px;
+  width: 300px;
+}
+
+span {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+span a {
+  margin: 0;
+}
+
+span img {
+  width: 50px;
+}
+
+a {
+  width: fit-content;
+  align-self: center;
+  font-size: 22px;
+  color: var(--text-color); /* Ensure link color changes with theme */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+button {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out, background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.colorModeContainer {
+  position: relative;
+}
+
+.colorMode {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  cursor: pointer;
+}
+
+.description {
+  max-width: 40ch;
+  font-size: 25px;
+  color: var(--text-color); /* Ensures description color changes with theme */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info h1, .info h2 {
+  margin: 0; /* Removes default margin */
+  color: var(--text-color); /* Use theme-dependent text color */
+}
+
+.info h1 {
+  margin-bottom: 10px; /* Adjusts space between h1 and h2 */
+}
+
+.info h2 {
+  margin-top: 0; /* Ensures no additional space above h2 */
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hero {
+    max-width: 400px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    max-width: 500px;
+    width: 500px;
+  }
+}
+
+/* Light Mode */
+body.light-mode {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --btn-color: var(--btn-color-light);
+  --btn-text-color: var(--btn-text-color-light);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  --background-color: var(--background-color);
+  --text-color: var(--text-color);
+  --btn-color: var(--btn-color);
+  --btn-text-color: var(--btn-text-color);
+}

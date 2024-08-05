@@ -1,0 +1,125 @@
+/* Base Styles */
+body {
+  font-family: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace; /* Ensure base font is Consolas */
+  font-size: 18px; /* Base font size */
+}
+
+/* Container for the entire section */
+.container {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section title styles */
+.sectionTitle {
+  text-align: center;
+  font-size: 42px; /* Increased font size */
+  margin-bottom: 40px;
+  color: var(--text); /* Ensure section title color changes */
+}
+
+/* Timeline container */
+.experienceTimeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Individual experience items */
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Date styling */
+.experienceDate {
+  font-size: 18px; /* Increased font size */
+  text-align: left;
+  margin-bottom: 10px;
+  color: var(--text); /* Ensure date color changes */
+}
+
+/* Content styling within each experience item */
+.experienceContent {
+  max-width: 800px; /* Increased width */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace; /* Set Consolas font */
+  word-spacing: 0.5em; /* Increase gap between words */
+}
+
+.experienceContent h3 {
+  font-size: 30px; /* Increased font size */
+  margin: 0 0 10px;
+  color: var(--text); /* Ensure title color changes */
+}
+
+.experienceContent h4 {
+  font-size: 25px; /* Increased font size */
+  margin: 0 0 10px;
+  color: var(--subtext); /* Ensure subtitle color changes */
+}
+
+.experienceContent ul {
+  padding-left: 20px;
+  margin: 0;
+  color: var(--text); /* Ensure list color changes */
+}
+
+.experienceContent ul li {
+  margin-bottom: 10px;
+}
+
+.experienceContent p {
+  margin: 0;
+  font-size: inherit; /* Use the base font size */
+  color: var(--text); /* Ensure paragraph color changes */
+}
+
+/* Additional styles for specific paragraphs */
+.experienceContent .paragraph1 {
+  font-size: 20px; /* Custom font size */
+  line-height: 3; /* Line height for readability */
+}
+
+.experienceContent .paragraph2 {
+  font-size: 16px; /* Different font size */
+  line-height: 1.4; /* Line height for readability */
+}
+
+/* Timeline line */
+.experienceTimeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--line);
+  transform: translateX(-50%);
+}
+
+/* Theme Variables */
+:root {
+  --background: #111;
+  --text: #fff;
+  --subtext: #ccc;
+  --line: #666;
+}
+
+.lightTheme {
+  --background: #fff;
+  --text: #000;
+  --subtext: #666;
+  --line: #ccc;
+}
