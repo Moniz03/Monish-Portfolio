@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   text-align: center;
   height: 100dvh;
   min-height: 500px;
@@ -113,14 +113,14 @@ button:active {
 
 .description {
   max-width: 40ch;
-  font-size: 15px;
+  font-size: 21px;
   color: var(--text-color); /* Ensures description color changes with theme */
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 12px;
 }
 
 .info h1, .info h2 {
