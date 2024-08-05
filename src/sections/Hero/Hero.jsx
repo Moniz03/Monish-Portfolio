@@ -54,7 +54,7 @@ function Hero() {
         </span>
         <p className={styles.description}>
         A versatile engineer skilled in both hardware and software, with a strong foundation in Java.
-        I love working with new tech and I bring a creative perspective from my photography hobby.
+        I love working with new tech and I bring a creative perspective from my photographic skills.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
