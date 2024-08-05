@@ -113,7 +113,7 @@ button:active {
 
 .description {
   max-width: 40ch;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--text-color); /* Ensures description color changes with theme */
 }
 
