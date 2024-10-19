@@ -3,7 +3,7 @@ import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/Cryptiq.png'
 import freshBurger from '../../assets/netflix.jpg'
 import hipsster from '../../assets/m-logo.jpg'
-import fitLift from '../../assets/Schottky.png'
+import fitLift from '../../assets/Schotky.png'
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
