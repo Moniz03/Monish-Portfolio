@@ -3,7 +3,7 @@ import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/Cryptiq.png'
 import freshBurger from '../../assets/netflix.jpg'
 import hipsster from '../../assets/m-logo.jpg'
-import fitLift from '../../assets/Schottky.jpg'
+import fitLift from '../../assets/Schottky.png'
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -35,8 +35,8 @@ function Projects() {
         <ProjectCard
           src={fitLift}
           link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Schottky Diode"
-          p="Semiconductor Development"
+          h3="Aqua Cloud"
+          p="Real Time Water Quality Monitoring"
           skills={['Material Science', 'Semiconductors']}
         />
       </div>
